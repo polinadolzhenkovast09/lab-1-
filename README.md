@@ -52,7 +52,8 @@
 
 #### Далее открываем два терминала для серверного и клиентского файла. Потом вводим iduser и проверям какие у него есть задачи
 
-<img width="1349" height="455" alt="image" src="https://github.com/user-attachments/assets/f0a16abd-93fd-45de-9b78-34e0ebdc1e77" />
+<img width="919" height="321" alt="image" src="https://github.com/user-attachments/assets/2db6d7a8-bb7f-4bed-ad52-7cf2e14c010f" />
+
 
 ## Вывод
 
