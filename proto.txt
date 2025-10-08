@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package task_manager;
+
+service TaskManager {
+  rpc GetTasksForUser(UserRequest) returns (stream Task);
+  rpc GetUserStats(UserRequest) returns (UserStats);
+}
+
+message UserRequest {
+  string user_id = 1;
+}
+
+message Task {
+  string task_id = 1;
+  string title = 2;
+  string description = 3;
+  TaskStatus status = 4;
+  string assignee = 5;
+  int64 created_at = 6;
+  int64 updated_at = 7;
+  Priority priority = 8;
+  repeated string tags = 9;
+}
+
+enum TaskStatus {
+  PENDING = 0;
+  IN_PROGRESS = 1;
+  COMPLETED = 2;
+  BLOCKED = 3;
+}
+
+enum Priority {
+  LOW = 0;
+  MEDIUM = 1;
+  HIGH = 2;
+  URGENT = 3;
+}
+
+message UserStats {
+  string user_id = 1;
+  int32 total_tasks = 2;
+  int32 pending_tasks = 3;
+  int32 completed_tasks = 4;
+  int32 in_progress_tasks = 5;
+  double completion_rate = 6;
+}
