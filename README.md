@@ -5,7 +5,8 @@
 
 ## 10 вариант Управление задачами Сервис TaskManager: метод GetTasksForUser(UserID) для получения потока задач для конкретного пользователя (Server streaming RPC).
 ## Архитектура
-<img width="765" height="805" alt="image" src="https://github.com/user-attachments/assets/6a822154-bd2e-446a-8a9c-f4a101d76c47" />
+<img width="736" height="724" alt="image" src="https://github.com/user-attachments/assets/f019abdc-834f-4e55-b5a3-f23c7e838857" />
+
 
 
 ## Компоненты
